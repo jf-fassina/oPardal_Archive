@@ -1,19 +1,27 @@
 plugins {
     id("java")
+    id("application")
+    id("org.openjfx.javafxplugin") version "0.0.14"
 }
-
-group = "opardal.archive"
-version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
+javafx {
+    version = "21.0.2"
+    modules = listOf("javafx.controls", "javafx.fxml")
 }
 
-tasks.test {
-    useJUnitPlatform()
+application {
+    mainClass.set("opardal.archive.MainApp")
 }
+
+application {
+    mainClass.set("opardal.archive.MainApp")
+}
+
+tasks.withType<JavaCompile> {
+    options.compilerArgs.add("--add-modules=ALL-MODULE-PATH")
+}
+

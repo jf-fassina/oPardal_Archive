@@ -1,12 +1,13 @@
 package opardal.archive;
 
-import java.io.IOException;
-import java.util.Scanner;
 
-public class Main {
+public class MainApp {
 
     public static void main(String[] args) {
-
+        GUI.launch(GUI.class, args);
+    }
+}
+ /*
         Scanner inp = new Scanner(System.in);
 
         int x = 22;
@@ -60,5 +61,5 @@ public class Main {
         }
 
         // printf("1%s\n", CHCKS);
-    }
-}
+
+         */
