@@ -1,3 +1,5 @@
 # oPardal_Archive
 
-The idea behind this porject is making a personal storage application, that is making an GUI interface as I indeed am not a sigma
+A ideia por trás deste projeto é criar uma aplicação que se assemelhe a um armazenamento em nuvem.
+
+Porém, eu não posso comprar/alugar um servidor, eu não posso ter um computador/notebook/torradeira para rodar só o armazenamento...
